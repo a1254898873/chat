@@ -1,4 +1,4 @@
-package com.nifengi.www.VO;
+package com.nifengi.www.vo;
 
 import lombok.Data;
 
@@ -9,7 +9,7 @@ import lombok.Data;
  * @date 2022/6/25 18:01
  */
 @Data
-public class UserVo {
+public class UserVO {
     private String id;
 
     private String username;
@@ -21,4 +21,7 @@ public class UserVo {
     private String nickname;
 
     private String qrcode;
+
+    private String token;
+
 }

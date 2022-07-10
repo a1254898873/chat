@@ -17,6 +17,7 @@ public class User {
 
     private String cid;
 
+
     public String getId() {
         return id;
     }
@@ -80,4 +81,5 @@ public class User {
     public void setCid(String cid) {
         this.cid = cid;
     }
+
 }

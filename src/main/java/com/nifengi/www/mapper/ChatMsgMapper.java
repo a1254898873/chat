@@ -3,6 +3,8 @@ package com.nifengi.www.mapper;
 import com.nifengi.www.pojo.ChatMsg;
 import org.apache.ibatis.annotations.Mapper;
 
+import java.util.List;
+
 @Mapper
 public interface ChatMsgMapper {
     int deleteByPrimaryKey(String id);
@@ -16,4 +18,6 @@ public interface ChatMsgMapper {
     int updateByPrimaryKeySelective(ChatMsg record);
 
     int updateByPrimaryKey(ChatMsg record);
+
+    List<ChatMsg> getUnReadMsgListByAcceptUid(String acceptUserId);
 }
