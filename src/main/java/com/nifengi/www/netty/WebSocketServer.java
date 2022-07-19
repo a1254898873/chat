@@ -39,7 +39,7 @@ public class WebSocketServer {
     }
 
     public void start() {
-        this.future = server.bind("172.17.9.194",8888);
+        this.future = server.bind(8888);
         if (future.isSuccess()) {
             System.out.println("启动 Netty 成功");
         }
